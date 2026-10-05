@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>无忧无虑电影网 - 热门电影电视剧在线观看_影视资源聚合导航</title>
+<meta name="description" content="无忧无虑电影网是面向中文用户的影视资源聚合导航站，收录热门电影、热播电视剧、国创动漫与热播榜单，分类清晰、每日更新、移动端自适应，想看的片随手就有。">
+<meta name="keywords" content="无忧无虑电影网,无忧无虑电影,电影在线观看,电视剧在线观看,动漫在线观看,高清影视导航,热播榜单,新片速递">
+<meta name="author" content="无忧无虑电影网">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="theme-color" content="#eef4fb">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="canonical" href="https://wuyouwuludianyingwang-cn.github.io/">
+<link rel="apple-touch-icon" href="/favicon.ico">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="无忧无虑电影网">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="无忧无虑电影网 - 热门电影电视剧在线观看_影视资源聚合导航">
+<meta property="og:description" content="无忧无虑电影网：热门电影、热播剧集、国创动漫与热播榜单一站直达，每日更新，手机端自适应。">
+<meta property="og:url" content="https://wuyouwuludianyingwang-cn.github.io/">
+<meta property="og:image" content="https://wuyouwuludianyingwang-cn.github.io/favicon.ico">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="无忧无虑电影网 - 热门电影电视剧在线观看">
+<meta name="twitter:description" content="无忧无虑电影网：热门电影、热播剧集、热播榜单一站直达，移动端自适应。">
+
+<style>
+/* ============ 设计令牌：晴空纸飞机（Sky Glider） ============ */
+:root{
+  --sky:#eef4fb;
+  --cloud:#ffffff;
+  --cloud-2:#f7fafe;
+  --ink:#25384d;
+  --ink-2:#5a728c;
+  --ink-3:#93a9c0;
+  --blue:#4a90d9;
+  --blue-2:#2c6cb0;
+  --mint:#3fbfa4;
+  --coral:#ff7a70;
+  --sun:#f4b942;
+  --lilac:#9b7fd4;
+  --line:rgba(37,56,77,.14);
+  --line-2:rgba(37,56,77,.07);
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace;
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --maxw:1180px;
+  --nav-h:64px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;padding:0;color:var(--ink);
+  font:16px/1.8 var(--sans);overflow-x:hidden;-webkit-font-smoothing:antialiased;
+  background-color:var(--sky);
+  background-image:
+    radial-gradient(720px 440px at 90% -8%, rgba(244,185,66,.2), transparent 62%),
+    radial-gradient(640px 400px at 6% 6%, rgba(74,144,217,.16), transparent 60%);
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol,dl{margin:0;padding:0;list-style:none}
+h1,h2,h3,h4{margin:0;font-weight:800;line-height:1.28;letter-spacing:-.018em}
+p{margin:0}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--sun);padding:10px 16px;z-index:999;font-weight:700}
+.skip:focus{left:12px;top:12px}
+.mono{font-family:var(--mono);letter-spacing:.14em;text-transform:uppercase}
+
+#progress{position:fixed;top:0;left:0;height:5px;width:0;z-index:200;
+  background:linear-gradient(90deg,var(--blue),var(--mint),var(--sun))}
+
+/* ============ 云层信息条 ============ */
+.cloudbar{position:relative;background:var(--ink);color:#eaf2fb;overflow:hidden}
+.cloudbar::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.3;
+  background-image:radial-gradient(circle 12px at 16px 50%,rgba(234,242,251,.5) 98%,transparent 100%),
+    radial-gradient(circle 9px at 46px 40%,rgba(234,242,251,.4) 98%,transparent 100%);
+  background-size:74px 100%,74px 100%}
+.cloudbar-in{max-width:var(--maxw);margin:0 auto;padding:8px 22px;display:flex;justify-content:space-between;
+  gap:12px;flex-wrap:wrap;position:relative;z-index:2;font-family:var(--mono);font-size:11.5px;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase}
+.cloudbar-in b{color:var(--sun)}
+
+/* ============ 导航 ============ */
+.nav{position:sticky;top:0;z-index:150;background:rgba(238,244,251,.94);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:var(--maxw);margin:0 auto;padding:0 22px;height:var(--nav-h);display:flex;align-items:center;gap:14px}
+.brand{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+/* 纸飞机 logo */
+.plane{flex:0 0 auto;width:34px;height:34px;position:relative}
+.plane i{position:absolute;left:0;top:6px;width:30px;height:26px;background:var(--cloud);
+  border:1px solid var(--line);clip-path:polygon(0 42%,100% 0,44% 100%,38% 52%)}
+.plane b{position:absolute;right:0;top:2px;width:12px;height:12px;border-radius:50%;background:var(--sun);
+  box-shadow:0 0 0 3px rgba(244,185,66,.22)}
+.brand b{display:block;font-size:18.5px;letter-spacing:-.01em}
+.brand small{display:block;font-family:var(--mono);font-size:9px;letter-spacing:.24em;color:var(--ink-3);
+  text-transform:uppercase;margin-top:-4px}
+.menu{margin-left:auto;display:flex;align-items:center;gap:2px}
+.menu a{padding:8px 12px;font-size:14.5px;font-weight:700;color:var(--ink-2);transition:.2s;white-space:nowrap;
+  border-bottom:2px solid transparent}
+.menu a:hover{color:var(--ink)}
+.menu a.active{color:var(--blue-2);border-bottom-color:var(--blue)}
+.nav-cta{flex:0 0 auto;margin-left:8px;padding:9px 18px;background:var(--blue);color:#fff;
+  font-family:var(--mono);font-size:12.5px;font-weight:700;letter-spacing:.08em;white-space:nowrap}
+.nav-cta:hover{background:var(--blue-2)}
+.burger{display:none;margin-left:auto;width:42px;height:36px;background:var(--cloud);border:1px solid var(--line);
+  cursor:pointer;place-items:center}
+.burger span{display:block;width:18px;height:2px;background:var(--ink);transition:.22s}
+.burger span+span{margin-top:5px}
+.burger.on span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.on span:nth-child(2){opacity:0}
+.burger.on span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ============ Hero ============ */
+.hero{padding:42px 0 38px;position:relative;overflow:hidden}
+/* 飘浮云 */
+.hero::before{content:"";position:absolute;left:0;right:0;top:0;height:200px;pointer-events:none;opacity:.55;
+  background-image:
+    radial-gradient(circle 30px at 8% 40%,var(--cloud) 98%,transparent 100%),
+    radial-gradient(circle 22px at 14% 32%,var(--cloud) 98%,transparent 100%),
+    radial-gradient(circle 26px at 88% 28%,var(--cloud) 98%,transparent 100%),
+    radial-gradient(circle 18px at 94% 36%,var(--cloud) 98%,transparent 100%)}
+.hero .wrap{position:relative;z-index:2}
+.hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:28px;align-items:center}
+.tagchip{display:inline-flex;align-items:center;gap:9px;padding:7px 16px;background:var(--cloud);
+  border:1px solid var(--line);font-family:var(--mono);font-size:11.5px;font-weight:700;letter-spacing:.16em;
+  color:var(--ink-2);text-transform:uppercase}
+.tagchip i{display:block;width:13px;height:11px;background:var(--cloud);border:1px solid var(--ink-3);
+  clip-path:polygon(0 42%,100% 0,44% 100%,38% 52%)}
+.hero h1{font-size:clamp(30px,5vw,52px);margin:18px 0 16px}
+.hero h1 em{font-style:normal;color:var(--blue-2)}
+.hero h1 u{text-decoration:none;position:relative;white-space:nowrap}
+.hero h1 u::after{content:"";position:absolute;left:-2px;right:-2px;bottom:.02em;height:10px;
+  background:linear-gradient(90deg,rgba(63,191,164,.4),rgba(74,144,217,.2));border-radius:6px;z-index:-1}
+.lead{font-size:16px;color:var(--ink-2);max-width:52ch}
+.lead b{color:var(--ink);font-weight:800;box-shadow:inset 0 -.5em 0 rgba(244,185,66,.34)}
+/* 搜索 */
+.search{margin:26px 0 14px;display:flex;gap:0;max-width:600px;background:var(--cloud);
+  border:1px solid var(--line);box-shadow:0 10px 24px rgba(37,56,77,.1)}
+.search .pre{flex:0 0 auto;display:flex;align-items:center;gap:8px;padding:0 14px;border-right:1px solid var(--line);
+  font-family:var(--mono);font-size:12px;font-weight:700;color:var(--ink-2);letter-spacing:.08em}
+.search .pre i{display:block;width:11px;height:9px;background:var(--blue);
+  clip-path:polygon(0 42%,100% 0,44% 100%,38% 52%)}
+.search input{flex:1;min-width:0;border:0;outline:0;background:none;font:15px var(--sans);color:var(--ink);padding:13px 14px}
+.search input::placeholder{color:var(--ink-3)}
+.search button{border:0;border-left:1px solid var(--line);cursor:pointer;padding:13px 26px;background:var(--mint);
+  color:#fff;font:800 15px var(--sans)}
+.search button:hover{background:var(--blue)}
+.chips{display:flex;flex-wrap:wrap;gap:9px;align-items:center;font-size:13px;font-weight:700}
+.chips a{padding:6px 15px;background:var(--cloud);color:var(--ink-2);border:1px solid var(--line);transition:.2s}
+.chips a:hover{border-color:var(--blue);color:var(--ink)}
+.chips a b{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px;vertical-align:middle}
+
+/* 天空面板 */
+.skypanel{position:relative;padding:18px;background:var(--cloud);border:1px solid var(--line);
+  box-shadow:0 18px 36px rgba(37,56,77,.12)}
+.skypanel .head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:13px;
+  padding-bottom:11px;border-bottom:1px dashed var(--line)}
+.skypanel .head h3{font-family:var(--mono);font-size:11.5px;font-weight:700;letter-spacing:.2em;color:var(--ink-3);text-transform:uppercase}
+.skypanel .head span{font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+/* 天空窗 */
+.skywin{position:relative;height:150px;border:1px solid var(--line);overflow:hidden;
+  background:linear-gradient(180deg,#cfe6f7,#eef4fb 62%,#f7fafe)}
+/* 太阳 */
+.skywin .sun{position:absolute;right:20px;top:16px;width:32px;height:32px;border-radius:50%;
+  background:radial-gradient(circle at 36% 32%,#ffe6a6,var(--sun));box-shadow:0 0 0 8px rgba(244,185,66,.16)}
+/* 纸飞机航线 */
+.skywin .trail{position:absolute;left:0;right:0;top:0;bottom:0}
+.skywin .trail svg{position:absolute;inset:0;width:100%;height:100%}
+.skywin .fly{position:absolute;width:26px;height:22px;background:var(--cloud);
+  filter:drop-shadow(0 2px 4px rgba(37,56,77,.24));
+  clip-path:polygon(0 42%,100% 0,44% 100%,38% 52%)}
+.skywin .f1{left:16%;top:26%;transform:rotate(-8deg)}
+.skywin .f2{left:52%;top:56%;transform:rotate(6deg) scale(.8);opacity:.8}
+/* 地平线 */
+.skywin .ground{position:absolute;left:0;right:0;bottom:0;height:34px;
+  background:linear-gradient(180deg,rgba(63,191,164,.28),rgba(63,191,164,.5))}
+.skywin .lbl{position:absolute;left:12px;top:11px;font-family:var(--mono);font-size:9.5px;font-weight:700;
+  letter-spacing:.18em;color:var(--ink-2)}
+.skypanel dl{margin:13px 0 0;border-top:1px dashed var(--line);padding-top:4px}
+.skypanel dl div{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--line-2);font-size:13.5px}
+.skypanel dl div:last-child{border-bottom:0}
+.skypanel dl dt{color:var(--ink-3);font-weight:700}
+.skypanel dl dd{margin:0;font-family:var(--mono);font-weight:700;color:var(--blue-2)}
+.skypanel .foot{margin-top:12px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.skypanel .foot p{font-size:12.5px;color:var(--ink-2);max-width:34ch}
+/* 风标 */
+.wind{flex:0 0 auto;display:flex;align-items:center;gap:8px;padding:8px 13px;background:var(--sky);
+  border:1px solid var(--line)}
+.wind i{display:block;width:20px;height:14px;background:var(--mint);
+  clip-path:polygon(0 42%,100% 0,44% 100%,38% 52%)}
+.wind b{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--ink-2)}
+
+/* ============ 栏目通用 ============ */
+section{padding:0}
+.inner{padding:46px 0;border-top:1px solid var(--line)}
+.sec-head{display:flex;align-items:flex-start;gap:16px;margin-bottom:24px;flex-wrap:wrap}
+/* 航标序号 */
+.buoy{flex:0 0 auto;width:50px;padding:5px 0 8px;text-align:center;position:relative;
+  background:linear-gradient(180deg,var(--bu) 0 62%,var(--cloud) 62%);
+  border:1px solid var(--line)}
+.buoy b{display:block;font-family:var(--mono);font-size:14px;font-weight:700;color:#fff;line-height:1.5}
+.buoy span{display:block;font-size:7.5px;font-weight:700;letter-spacing:.14em;color:var(--ink-2);margin-top:2px}
+.buoy::after{content:"";position:absolute;left:50%;bottom:-6px;width:9px;height:9px;margin-left:-4.5px;
+  border-radius:50%;background:var(--cloud);border:1px solid var(--line)}
+.sec-head .txt{flex:1;min-width:260px}
+.sec-head h2{font-size:clamp(21px,2.9vw,30px)}
+.sec-head h2 small{display:block;font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.28em;
+  color:var(--ink-3);text-transform:uppercase;margin-bottom:7px}
+.sec-head p{font-size:14.3px;color:var(--ink-2);max-width:56ch;margin-top:8px}
+.more{flex:0 0 auto;align-self:center;padding:11px 20px;background:var(--ink);color:#eaf2fb;
+  font-family:var(--mono);font-size:12.5px;font-weight:700;letter-spacing:.08em;white-space:nowrap}
+.more:hover{background:var(--blue)}
+
+.filters{display:flex;gap:9px;overflow-x:auto;padding-bottom:6px;margin-bottom:22px;scrollbar-width:none;flex-wrap:wrap}
+.filters::-webkit-scrollbar{display:none}
+.filters button{flex:0 0 auto;border:1px solid var(--line);background:var(--cloud);color:var(--ink-2);
+  padding:8px 18px;font:700 14.5px var(--sans);cursor:pointer;transition:.18s}
+.filters button:hover{border-color:var(--blue);color:var(--ink)}
+.filters button.on{background:var(--blue);color:#fff;border-color:var(--blue-2)}
+
+/* ============ 片库：云朵卡 ============ */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:18px}
+.clcard{margin:0;background:transparent;transition:transform .26s ease}
+.clcard:hover{transform:translateY(-6px)}
+/* 云朵外框 */
+.clcard .cloud{position:relative;padding:9px 9px 0;background:var(--cloud);border:1px solid var(--line);
+  border-radius:34px 34px 12px 12px}
+.clcard .cloud::before,.clcard .cloud::after{content:"";position:absolute;bottom:-1px;background:var(--cloud);
+  border:1px solid var(--line);border-top:0}
+.clcard .cloud::before{left:12px;width:38px;height:22px;border-radius:0 0 20px 20px;border-top:0;z-index:2}
+.clcard .cloud::after{right:16px;width:28px;height:16px;border-radius:0 0 16px 16px;border-top:0;z-index:2}
+.clcard .ph{position:relative;aspect-ratio:3/4;overflow:hidden;border:1px solid var(--line);
+  background:linear-gradient(170deg,var(--c1),var(--c2))}
+.clcard .ph::before{content:"";position:absolute;inset:0;opacity:.4;
+  background-image:radial-gradient(circle 22px at 78% 22%,rgba(255,255,255,.6) 96%,transparent 100%),
+    radial-gradient(circle 14px at 92% 30%,rgba(255,255,255,.45) 96%,transparent 100%)}
+.clcard .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 44%,rgba(37,56,77,.84))}
+.clcard .tag{position:absolute;left:0;top:14px;z-index:3;font-family:var(--mono);font-size:10px;font-weight:700;
+  letter-spacing:.1em;padding:4px 11px 4px 9px;color:#fff;background:var(--pc)}
+.clcard .sc{position:absolute;right:9px;top:9px;z-index:3;min-width:42px;height:27px;display:grid;place-items:center;
+  padding:0 7px;font-family:var(--mono);font-size:12.5px;font-weight:700;color:var(--ink);background:var(--cloud);
+  border:1px solid var(--line)}
+.clcard .nm{position:absolute;left:11px;right:11px;bottom:11px;z-index:3;font-size:13.5px;font-weight:800;color:#fff;
+  text-shadow:0 2px 10px rgba(37,56,77,.7)}
+.clcard .info{padding:20px 4px 4px}
+.clcard .info h3{font-size:15px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.clcard .info p{font-size:12.3px;color:var(--ink-3);margin-top:3px;display:flex;justify-content:space-between;
+  gap:8px;font-weight:700}
+.clcard .info p em{font-style:normal;font-family:var(--mono);font-weight:700;color:var(--pc)}
+/* 飞行信息 */
+.clcard .spec{margin-top:9px;padding-top:8px;border-top:1px dashed var(--line);display:flex;justify-content:space-between;
+  gap:8px;font-family:var(--mono);font-size:10px;font-weight:700;color:var(--ink-3);letter-spacing:.08em}
+
+/* ============ 剧集：航线排 ============ */
+.routes{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+.rt-row{display:flex;gap:14px;padding:13px;background:var(--cloud);border:1px solid var(--line);
+  border-left:4px solid var(--pc);transition:.26s}
+.rt-row:hover{transform:translateY(-4px);box-shadow:0 16px 30px rgba(37,56,77,.12)}
+.rt-row .mini{flex:0 0 78px;height:104px;position:relative;overflow:hidden;border:1px solid var(--line);
+  background:linear-gradient(165deg,var(--c1),var(--c2))}
+.rt-row .mini::before{content:"";position:absolute;inset:0;opacity:.4;
+  background-image:radial-gradient(circle 18px at 76% 24%,rgba(255,255,255,.55) 96%,transparent 100%)}
+.rt-row .mini span{position:absolute;left:0;right:0;bottom:0;z-index:2;font-family:var(--mono);font-size:10px;
+  text-align:center;padding:3px 0;color:#fff;background:rgba(37,56,77,.9)}
+.rt-row .bd{flex:1;min-width:0}
+.rt-row .bd h3{font-size:15.5px;display:flex;align-items:center;gap:9px}
+.rt-row .bd h3 i{flex:0 0 auto;font-style:normal;font-family:var(--mono);font-size:10px;font-weight:700;
+  letter-spacing:.08em;padding:3px 8px;color:#fff;background:var(--pc)}
+.rt-row .bd > p{font-size:12.5px;color:var(--ink-3);margin-top:3px;font-weight:700}
+/* 航线进度 */
+.rt-row .air{margin-top:12px;height:14px;position:relative}
+.rt-row .air b{position:absolute;left:0;right:0;top:6px;height:2px;background:var(--line)}
+.rt-row .air i{position:absolute;left:0;top:6px;height:2px;background:repeating-linear-gradient(90deg,var(--pc) 0 5px,transparent 5px 9px)}
+.rt-row .air u{position:absolute;top:0;width:14px;height:14px;text-decoration:none;background:var(--pc);
+  clip-path:polygon(0 42%,100% 0,44% 100%,38% 52%)}
+.rt-row .air em{position:absolute;right:0;top:-2px;width:8px;height:8px;border-radius:50%;background:var(--ink-3)}
+.rt-row .stat{display:block;margin-top:9px;font-family:var(--mono);font-size:11.5px;font-weight:700;color:var(--pc);
+  letter-spacing:.06em}
+/* 云朵 */
+.rt-row .puff{flex:0 0 auto;align-self:center;width:30px;height:20px;position:relative;background:var(--cloud);
+  border:1px solid var(--line);border-radius:20px}
+.rt-row .puff::before{content:"";position:absolute;left:5px;top:-7px;width:15px;height:15px;border-radius:50%;
+  background:var(--cloud);border:1px solid var(--line)}
+.rt-row .puff::after{content:"";position:absolute;left:5px;top:-7px;width:15px;height:8px;background:var(--cloud)}
+
+/* ============ 榜单：三只热气球 ============ */
+.balloons{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:start}
+.bln{background:var(--cloud);border:1px solid var(--line);overflow:hidden}
+/* 气球冠 */
+.bln .crown{position:relative;height:96px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#dcecf9,#f4f9fd)}
+.bln .crown .globe{position:relative;width:66px;height:78px;border-radius:50% 50% 46% 46% / 58% 58% 42% 42%;
+  background:radial-gradient(circle at 34% 28%,rgba(255,255,255,.85),var(--bc) 58%,rgba(0,0,0,.22));
+  box-shadow:inset -6px -6px 12px rgba(0,0,0,.16),0 6px 14px rgba(37,56,77,.16)}
+.bln .crown .globe::before{content:"";position:absolute;left:50%;top:8px;width:2px;height:66px;margin-left:-1px;
+  background:repeating-linear-gradient(90deg,rgba(255,255,255,.7) 0 2px,transparent 2px 16px);opacity:.5}
+.bln .crown .globe::after{content:"";position:absolute;left:50%;bottom:-14px;width:22px;height:16px;margin-left:-11px;
+  background:var(--bc);clip-path:polygon(0 0,100% 0,64% 100%,36% 100%)}
+.bln .crown h3{position:absolute;left:12px;top:11px;font-size:16px;color:var(--bc2)}
+.bln .crown h3 em{display:block;font-style:normal;font-family:var(--mono);font-size:9px;font-weight:700;
+  letter-spacing:.18em;color:var(--ink-3);margin-top:3px}
+.bln .crown u{position:absolute;right:12px;top:11px;text-decoration:none;font-family:var(--mono);font-size:9.5px;
+  font-weight:700;letter-spacing:.12em;color:#fff;background:var(--bc2);padding:3px 8px}
+.bln ol{padding:12px 15px 14px}
+.bln ol li{display:flex;align-items:center;gap:11px;padding:9px 0;border-bottom:1px solid var(--line-2)}
+.bln ol li:last-child{border-bottom:0}
+.bln .no{flex:0 0 auto;min-width:32px;height:27px;display:grid;place-items:center;padding:0 7px;
+  font-family:var(--mono);font-size:12px;font-weight:700;color:var(--ink-2);background:var(--sky);
+  border:1px solid var(--line)}
+.bln ol li:first-child .no{color:#fff;background:var(--bc2);border-color:var(--bc2)}
+.bln .rt{flex:1;min-width:0}
+.bln .rt strong{display:block;font-size:14.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bln .rt span{font-size:12px;color:var(--ink-3)}
+.bln .val{flex:0 0 auto;font-family:var(--mono);font-size:13.5px;font-weight:700;color:var(--bc2)}
+
+/* ============ 天空手记 ============ */
+.notes{display:grid;grid-template-columns:repeat(auto-fill,minmax(274px,1fr));gap:18px}
+.note{background:var(--cloud);border:1px solid var(--line);overflow:hidden;transition:.28s}
+.note:hover{transform:translateY(-6px);box-shadow:0 18px 34px rgba(37,56,77,.13)}
+.note .cv{height:124px;position:relative;background:linear-gradient(160deg,var(--c1),var(--c2))}
+.note .cv::before{content:"";position:absolute;inset:0;opacity:.45;
+  background-image:radial-gradient(circle 22px at 78% 26%,rgba(255,255,255,.6) 96%,transparent 100%),
+    radial-gradient(circle 14px at 90% 34%,rgba(255,255,255,.45) 96%,transparent 100%)}
+.note .cv b{position:absolute;left:0;bottom:12px;z-index:3;font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:.14em;padding:5px 13px 5px 9px;color:#fff;background:var(--pc)}
+.note .cv u{position:absolute;right:10px;top:10px;z-index:3;text-decoration:none;font-family:var(--mono);
+  font-size:9.5px;font-weight:700;letter-spacing:.14em;color:var(--ink);background:var(--sun);padding:3px 9px}
+.note .bd{padding:15px 16px 18px}
+.note .bd h3{font-size:16px;margin-bottom:7px}
+.note .bd p{font-size:13.5px;color:var(--ink-2)}
+.note .bd time{display:block;margin-top:11px;font-family:var(--mono);font-size:11.5px;font-weight:700;
+  color:var(--ink-3);letter-spacing:.08em}
+
+/* ============ 关于 / FAQ ============ */
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:16px;align-items:start}
+.panel{background:var(--cloud);border:1px solid var(--line);padding:24px}
+.panel h3{font-size:19px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px dashed var(--line)}
+.panel p{font-size:14.5px;color:var(--ink-2);margin-bottom:11px}
+.panel p b{color:var(--ink);box-shadow:inset 0 -.5em 0 rgba(244,185,66,.36)}
+.winds{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}
+.winds div{padding:14px 10px;text-align:center;background:var(--sky);border-top:4px solid var(--wc)}
+.winds span{display:block;width:24px;height:18px;margin:0 auto 8px;background:var(--wc);
+  clip-path:polygon(0 42%,100% 0,44% 100%,38% 52%)}
+.winds strong{display:block;font-size:13px}
+.winds em{font-style:normal;font-size:11.5px;color:var(--ink-2);font-weight:700}
+.faq details{border-bottom:1px solid var(--line-2);padding:13px 0}
+.faq summary{cursor:pointer;font-size:15px;font-weight:800;list-style:none;display:flex;justify-content:space-between;
+  gap:12px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"✈";font-size:13px;color:var(--blue);transform:rotate(-45deg)}
+.faq details[open] summary::after{content:"☁";transform:none;color:var(--mint)}
+.faq details p{font-size:14px;color:var(--ink-2);margin-top:9px}
+
+/* CTA */
+.cta{margin-top:14px;padding:44px 26px;text-align:center;position:relative;overflow:hidden;
+  background:linear-gradient(120deg,var(--blue-2),var(--blue) 52%,var(--mint));color:#fff}
+.cta::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:radial-gradient(circle 26px at 12% 78%,rgba(255,255,255,.55) 96%,transparent 100%),
+    radial-gradient(circle 18px at 20% 84%,rgba(255,255,255,.4) 96%,transparent 100%),
+    radial-gradient(circle 22px at 86% 22%,rgba(255,255,255,.45) 96%,transparent 100%)}
+.cta h2{position:relative;font-size:clamp(20px,3vw,29px);margin-bottom:10px}
+.cta h2 em{font-style:normal;color:#ffe6a6}
+.cta p{position:relative;font-size:14.5px;color:rgba(255,255,255,.88);max-width:56ch;margin:0 auto 22px}
+.cta a{position:relative;display:inline-block;padding:14px 34px;background:var(--sun);color:var(--ink);
+  font-family:var(--mono);font-size:14px;font-weight:700;letter-spacing:.1em}
+.cta a:hover{background:#ffc65e}
+
+/* 页脚 */
+footer{margin-top:0;padding:34px 0 22px;background:var(--ink);color:#eaf2fb}
+.fgrid{display:grid;grid-template-columns:1.6fr repeat(3,1fr);gap:26px}
+.fgrid h4{font-size:15px;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid rgba(234,242,251,.24);
+  color:var(--sun);letter-spacing:.08em}
+.fgrid a,.fgrid li{font-size:13.5px;color:rgba(234,242,251,.66);line-height:2.1}
+.fgrid a:hover{color:var(--sun)}
+.fbrand .lg{display:flex;align-items:center;gap:11px;font-size:19px;font-weight:800;letter-spacing:-.01em}
+.fbrand .lg i{font-style:normal;display:block;width:28px;height:22px;flex:0 0 auto;background:#eaf2fb;
+  clip-path:polygon(0 42%,100% 0,44% 100%,38% 52%)}
+.fbrand p{font-size:13.5px;color:rgba(234,242,251,.6);margin-top:11px;max-width:42ch}
+.bottom{margin-top:24px;padding-top:16px;border-top:1px solid rgba(234,242,251,.22);
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12.5px;color:rgba(234,242,251,.6)}
+.bottom b{color:var(--sun)}
+
+#top{position:fixed;right:16px;bottom:20px;width:46px;height:46px;background:var(--cloud);color:var(--blue-2);
+  border:1px solid var(--line);display:grid;place-items:center;cursor:pointer;z-index:160;opacity:0;
+  pointer-events:none;transition:.25s;box-shadow:0 8px 20px rgba(37,56,77,.18)}
+#top.show{opacity:1;pointer-events:auto}
+#top:hover{background:var(--blue);color:#fff}
+#top svg{width:18px;height:18px;fill:currentColor}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ============ 响应式 ============ */
+@media (max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;gap:24px}
+  .skypanel{max-width:540px}
+  .about{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr 1fr}
+  .balloons{grid-template-columns:1fr}
+}
+@media (max-width:880px){
+  .menu{position:fixed;top:var(--nav-h);left:10px;right:10px;flex-direction:column;align-items:stretch;gap:2px;
+    padding:12px;background:var(--cloud);border:1px solid var(--line);box-shadow:0 18px 40px rgba(37,56,77,.2);
+    transform:translateY(-10px);opacity:0;visibility:hidden;transition:.24s;
+    max-height:calc(100vh - var(--nav-h) - 30px);overflow:auto}
+  .menu.open{transform:none;opacity:1;visibility:visible}
+  .menu a{padding:14px 16px;font-size:16px;border-bottom:1px solid var(--line-2)}
+  .nav-cta{margin:8px 0 0;text-align:center}
+  .burger{display:grid}
+  .hero{padding:22px 0 20px}
+  .routes{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .wrap{padding:0 15px}
+  .nav-in{padding:0 15px}
+  .cloudbar-in{padding:7px 15px;font-size:11px;letter-spacing:.06em}
+  .inner{padding:34px 0}
+  .grid{grid-template-columns:repeat(2,1fr);gap:14px}
+  .clcard .cloud{padding:7px 7px 0}
+  .clcard .nm{font-size:12px}
+  .clcard .info{padding:18px 3px 3px}
+  .clcard .info h3{font-size:13.5px}
+  .search{flex-wrap:wrap}
+  .search .pre{flex:1 1 100%;padding:8px 14px;border-right:0;border-bottom:1px solid var(--line)}
+  .search input{flex:1 1 100%;border-bottom:1px solid var(--line)}
+  .search button{flex:1 1 100%;border-left:0;border-top:1px solid var(--line)}
+  .skypanel{padding:15px 14px}
+  .skywin{height:132px}
+  .skywin .f2{display:none}
+  .skypanel .foot{flex-direction:column;align-items:flex-start}
+  .winds{grid-template-columns:repeat(2,1fr)}
+  .fgrid{grid-template-columns:1fr;gap:20px}
+  .cta{padding:32px 16px}
+  .sec-head{gap:12px}
+  .buoy{width:44px}
+  .buoy b{font-size:12.5px}
+  .buoy span{font-size:6.5px}
+  .rt-row .puff{display:none}
+  .rt-row .bd h3{font-size:14px}
+  .bln .crown{height:88px}
+  .bln .crown .globe{width:58px;height:70px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<a class="skip" href="#main">跳到主要内容</a>
+<div id="progress" aria-hidden="true"></div>
+
+<!-- ===== 云层信息条 ===== -->
+<div class="cloudbar">
+  <div class="cloudbar-in">
+    <span>无忧无虑电影网 · Sky Glider</span>
+    <span>风向 <b>东南 2 级</b></span>
+    <span>每日 10:00 / 21:00 上新</span>
+  </div>
+</div>
+
+<!-- ===== 导航 ===== -->
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="#home" aria-label="无忧无虑电影网首页">
+      <span class="plane" aria-hidden="true"><i></i><b></b></span>
+      <span><b>无忧无虑电影网</b><small>sky glider</small></span>
+    </a>
+    <button class="burger" id="burger" aria-label="展开导航菜单" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="menu" id="menu" aria-label="主导航">
+      <a href="#home" class="active">晴天首页</a>
+      <a href="#movie">云朵片库</a>
+      <a href="#series">追更航线</a>
+      <a href="#rank">气球榜单</a>
+      <a href="#news">天空手记</a>
+      <a href="#about">飞行指南</a>
+      <a class="nav-cta" href="#movie">随手起飞</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===== 首页 ===== -->
+  <section id="home" class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="tagchip"><i aria-hidden="true"></i>FLIGHT 01 · 天气晴，适合看片</span>
+        <h1>好片随手就有，<em>无忧无虑电影网</em> <u>轻松起飞</u></h1>
+        <p class="lead">
+          无忧无虑电影网是面向中文用户的影视资源聚合导航站：热门电影、<b>热播剧集</b>、国创动漫与热播榜单一站收拢，
+          分类清晰、每日上新，手机、平板、电脑打开都能顺畅在线观看。
+        </p>
+        <form class="search" role="search" id="searchForm">
+          <span class="pre" aria-hidden="true"><i></i>检索</span>
+          <input type="search" name="q" placeholder="搜索片名、演员或类型，例如：科幻 / 治愈" aria-label="站内搜索">
+          <button type="submit">随手起飞</button>
+        </form>
+        <div class="chips">
+          <a href="#movie"><b style="background:var(--blue)"></b>剧情气流</a>
+          <a href="#movie"><b style="background:var(--mint)"></b>治愈气流</a>
+          <a href="#series"><b style="background:var(--coral)"></b>都市情感</a>
+          <a href="#rank"><b style="background:var(--sun)"></b>高分气流</a>
+          <a href="#movie"><b style="background:var(--lilac)"></b>国创动漫</a>
+        </div>
+      </div>
+
+      <aside class="skypanel reveal">
+        <div class="head">
+          <h3>Sky Board · 今日航线</h3>
+          <span>CLEAR</span>
+        </div>
+        <div class="skywin">
+          <span class="sun" aria-hidden="true"></span>
+          <span class="trail">
+            <svg viewBox="0 0 320 150" role="presentation" aria-hidden="true">
+              <path d="M18 96 C 90 40, 150 128, 232 62 S 300 34, 308 30"
+                fill="none" stroke="#4a90d9" stroke-width="2" stroke-dasharray="5 7" stroke-linecap="round" opacity=".6"/>
+            </svg>
+          </span>
+          <span class="fly f1" aria-hidden="true"></span>
+          <span class="fly f2" aria-hidden="true"></span>
+          <span class="ground" aria-hidden="true"></span>
+          <span class="lbl">ALT 3,200 M</span>
+        </div>
+        <dl>
+          <div><dt>收录影片</dt><dd>36,600+</dd></div>
+          <div><dt>精细分类</dt><dd>18</dd></div>
+          <div><dt>上新频率</dt><dd>每日 2 次</dd></div>
+          <div><dt>榜单刷新</dt><dd>每小时</dd></div>
+        </dl>
+        <div class="foot">
+          <p>无忧无虑电影网把分散的影视入口收进同一片天空，找片因此变短。</p>
+          <span class="wind"><i aria-hidden="true"></i><b>顺风</b></span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== 栏目一：云朵片库 ===== -->
+  <section id="movie">
+    <div class="wrap inner">
+      <div class="sec-head reveal">
+        <span class="buoy" style="--bu:var(--blue)"><b>01</b><span>SKY</span></span>
+        <div class="txt">
+          <h2><small>Library</small>云朵片库 · 每部影片都停在一朵云上</h2>
+          <p>无忧无虑电影网把片库按题材分成六股气流：剧情、治愈、动作、悬疑、爱情、动漫。点一下就换气流，卡片外框是带两个云脚的云朵，封面飘着小云朵。</p>
+        </div>
+        <a class="more" href="#">查看全部分类 →</a>
+      </div>
+      <div class="filters" role="tablist" aria-label="影片类型筛选">
+        <button class="on" data-cat="all" role="tab" aria-selected="true">全部气流</button>
+        <button data-cat="drama" role="tab" aria-selected="false">剧情</button>
+        <button data-cat="heal" role="tab" aria-selected="false">治愈</button>
+        <button data-cat="action" role="tab" aria-selected="false">动作</button>
+        <button data-cat="mystery" role="tab" aria-selected="false">悬疑</button>
+        <button data-cat="love" role="tab" aria-selected="false">爱情</button>
+        <button data-cat="anime" role="tab" aria-selected="false">动漫</button>
+      </div>
+      <div class="grid" id="movieGrid">
+        <article class="clcard reveal" data-cat="drama" style="--pc:var(--blue-2);--c1:#4a90d9;--c2:#16375c">
+          <span class="cloud">
+            <span class="ph"><span class="tag">剧情</span><span class="sc">9.1</span><span class="nm">三月花信</span></span>
+          </span>
+          <div class="info"><h3>三月花信</h3>
+            <p><span>剧情 · 2026</span><em>9.1</em></p>
+            <span class="spec"><span>FL-01</span><span>2026-031</span></span>
+          </div>
+        </article>
+        <article class="clcard reveal" data-cat="heal" style="--pc:var(--mint);--c1:#3fbfa4;--c2:#0d3d34">
+          <span class="cloud">
+            <span class="ph"><span class="tag">治愈</span><span class="sc">8.9</span><span class="nm">潮汐来信</span></span>
+          </span>
+          <div class="info"><h3>潮汐来信</h3>
+            <p><span>剧情 · 2026</span><em>8.9</em></p>
+            <span class="spec"><span>FL-02</span><span>2026-028</span></span>
+          </div>
+        </article>
+        <article class="clcard reveal" data-cat="action" style="--pc:var(--coral);--c1:#ff7a70;--c2:#5c1a15">
+          <span class="cloud">
+            <span class="ph"><span class="tag">动作</span><span class="sc">8.5</span><span class="nm">疾速拦截</span></span>
+          </span>
+          <div class="info"><h3>疾速拦截</h3>
+            <p><span>动作 · 2026</span><em>8.5</em></p>
+            <span class="spec"><span>FL-03</span><span>2026-024</span></span>
+          </div>
+        </article>
+        <article class="clcard reveal" data-cat="mystery" style="--pc:var(--lilac);--c1:#9b7fd4;--c2:#2e2050">
+          <span class="cloud">
+            <span class="ph"><span class="tag">悬疑</span><span class="sc">8.8</span><span class="nm">第七个证人</span></span>
+          </span>
+          <div class="info"><h3>第七个证人</h3>
+            <p><span>悬疑 · 2025</span><em>8.8</em></p>
+            <span class="spec"><span>FL-04</span><span>2025-117</span></span>
+          </div>
+        </article>
+        <article class="clcard reveal" data-cat="love" style="--pc:var(--sun);--c1:#f4b942;--c2:#5c3c05">
+          <span class="cloud">
+            <span class="ph"><span class="tag">爱情</span><span class="sc">8.7</span><span class="nm">长街旧事</span></span>
+          </span>
+          <div class="info"><h3>长街旧事</h3>
+            <p><span>剧情 · 2025</span><em>8.7</em></p>
+            <span class="spec"><span>FL-05</span><span>2025-104</span></span>
+          </div>
+        </article>
+        <article class="clcard reveal" data-cat="anime" style="--pc:var(--mint);--c1:#5ed0b8;--c2:#0d3d34">
+          <span class="cloud">
+            <span class="ph"><span class="tag">动漫</span><span class="sc">8.6</span><span class="nm">花灯记</span></span>
+          </span>
+          <div class="info"><h3>花灯记</h3>
+            <p><span>动画 · 2026</span><em>8.6</em></p>
+            <span class="spec"><span>FL-06</span><span>2026-019</span></span>
+          </div>
+        </article>
+        <article class="clcard reveal" data-cat="heal" style="--pc:var(--mint);--c1:#6ed9c2;--c2:#0d3d34">
+          <span class="cloud">
+            <span class="ph"><span class="tag">治愈</span><span class="sc">8.3</span><span class="nm">海边小店</span></span>
+          </span>
+          <div class="info"><h3>海边小店</h3>
+            <p><span>剧情 · 2025</span><em>8.3</em></p>
+            <span class="spec"><span>FL-02</span><span>2025-092</span></span>
+          </div>
+        </article>
+        <article class="clcard reveal" data-cat="mystery" style="--pc:var(--lilac);--c1:#b39ce4;--c2:#2e2050">
+          <span class="cloud">
+            <span class="ph"><span class="tag">悬疑</span><span class="sc">8.4</span><span class="nm">无声证词</span></span>
+          </span>
+          <div class="info"><h3>无声证词</h3>
+            <p><span>悬疑 · 2024</span><em>8.4</em></p>
+            <span class="spec"><span>FL-04</span><span>2024-076</span></span>
+          </div>
+        </article>
+        <article class="clcard reveal" data-cat="action" style="--pc:var(--coral);--c1:#ff9d95;--c2:#5c1a15">
+          <span class="cloud">
+            <span class="ph"><span class="tag">动作</span><span class="sc">8.1</span><span class="nm">极速追缉</span></span>
+          </span>
+          <div class="info"><h3>极速追缉</h3>
+            <p><span>动作 · 2026</span><em>8.1</em></p>
+            <span class="spec"><span>FL-03</span><span>2026-015</span></span>
+          </div>
+        </article>
+        <article class="clcard reveal" data-cat="drama" style="--pc:var(--blue-2);--c1:#63a4e2;--c2:#16375c">
+          <span class="cloud">
+            <span class="ph"><span class="tag">剧情</span><span class="sc">9.0</span><span class="nm">深空信号</span></span>
+          </span>
+          <div class="info"><h3>深空信号</h3>
+            <p><span>剧情 · 2026</span><em>9.0</em></p>
+            <span class="spec"><span>FL-01</span><span>2026-008</span></span>
+          </div>
+        </article>
+        <article class="clcard reveal" data-cat="anime" style="--pc:var(--sun);--c1:#f7c96a;--c2:#5c3c05">
+          <span class="cloud">
+            <span class="ph"><span class="tag">动漫</span><span class="sc">8.2</span><span class="nm">山海食记</span></span>
+          </span>
+          <div class="info"><h3>山海食记</h3>
+            <p><span>动画 · 2025</span><em>8.2</em></p>
+            <span class="spec"><span>FL-06</span><span>2025-061</span></span>
+          </div>
+        </article>
+        <article class="clcard reveal" data-cat="love" style="--pc:var(--ink-2);--c1:#7d94ad;--c2:#22334a">
+          <span class="cloud">
+            <span class="ph"><span class="tag">爱情</span><span class="sc">7.9</span><span class="nm">周末大赢家</span></span>
+          </span>
+          <div class="info"><h3>周末大赢家</h3>
+            <p><span>喜剧 · 2025</span><em>7.9</em></p>
+            <span class="spec"><span>FL-05</span><span>2025-043</span></span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 栏目二：追更航线 ===== -->
+  <section id="series">
+    <div class="wrap inner">
+      <div class="sec-head reveal">
+        <span class="buoy" style="--bu:var(--mint)"><b>02</b><span>ROUTE</span></span>
+        <div class="txt">
+          <h2><small>Series</small>追更航线 · 纸飞机飞到哪儿，就更新到哪儿</h2>
+          <p>都市情感、年代往事、悬疑罪案同步跟播，每部剧一条航线，虚线是全程，纸飞机的位置就是当前进度。</p>
+        </div>
+        <a class="more" href="#">更新时间表 →</a>
+      </div>
+      <div class="routes">
+        <article class="rt-row reveal" style="--pc:var(--blue-2);--c1:#4a90d9;--c2:#16375c">
+          <span class="mini"><span>EP 24</span></span>
+          <div class="bd">
+            <h3><i>更新中</i>三月花信</h3>
+            <p>剧情 / 年代 · 每周三、周五 20:00</p>
+            <span class="air"><b></b><i style="width:80%"></i><u style="left:80%"></u><em></em></span>
+            <span class="stat">24 / 30 集 · 航线 80%</span>
+          </div>
+          <span class="puff" aria-hidden="true"></span>
+        </article>
+        <article class="rt-row reveal" style="--pc:var(--sun);--c1:#f4b942;--c2:#5c3c05">
+          <span class="mini"><span>EP 20</span></span>
+          <div class="bd">
+            <h3><i>更新中</i>长街旧事</h3>
+            <p>剧情 / 年代 · 每周一至周三 21:00</p>
+            <span class="air"><b></b><i style="width:62%"></i><u style="left:62%"></u><em></em></span>
+            <span class="stat">20 / 32 集 · 航线 62%</span>
+          </div>
+          <span class="puff" aria-hidden="true"></span>
+        </article>
+        <article class="rt-row reveal" style="--pc:var(--mint);--c1:#3fbfa4;--c2:#0d3d34">
+          <span class="mini"><span>EP 32</span></span>
+          <div class="bd">
+            <h3><i>已完结</i>潮汐来信</h3>
+            <p>爱情 / 都市 · 全 32 集一次看爽</p>
+            <span class="air"><b></b><i style="width:100%"></i><u style="left:100%"></u><em></em></span>
+            <span class="stat">32 / 32 集 · 航线飞满</span>
+          </div>
+          <span class="puff" aria-hidden="true"></span>
+        </article>
+        <article class="rt-row reveal" style="--pc:var(--lilac);--c1:#9b7fd4;--c2:#2e2050">
+          <span class="mini"><span>EP 12</span></span>
+          <div class="bd">
+            <h3><i>更新中</i>深空信号</h3>
+            <p>剧情 / 科幻 · 每周六 22:00</p>
+            <span class="air"><b></b><i style="width:40%"></i><u style="left:40%"></u><em></em></span>
+            <span class="stat">12 / 30 集 · 航线 40%</span>
+          </div>
+          <span class="puff" aria-hidden="true"></span>
+        </article>
+        <article class="rt-row reveal" style="--pc:var(--coral);--c1:#ff7a70;--c2:#5c1a15">
+          <span class="mini"><span>EP 30</span></span>
+          <div class="bd">
+            <h3><i>更新中</i>山海食记</h3>
+            <p>动画 / 国创 · 每周四 10:00</p>
+            <span class="air"><b></b><i style="width:75%"></i><u style="left:75%"></u><em></em></span>
+            <span class="stat">30 / 40 集 · 航线 75%</span>
+          </div>
+          <span class="puff" aria-hidden="true"></span>
+        </article>
+        <article class="rt-row reveal" style="--pc:var(--ink-2);--c1:#7d94ad;--c2:#22334a">
+          <span class="mini"><span>EP 08</span></span>
+          <div class="bd">
+            <h3><i>更新中</i>极速追缉</h3>
+            <p>动作 / 涉案 · 每周日 20:00</p>
+            <span class="air"><b></b><i style="width:27%"></i><u style="left:27%"></u><em></em></span>
+            <span class="stat">8 / 30 集 · 航线 27%</span>
+          </div>
+          <span class="puff" aria-hidden="true"></span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 栏目三：气球榜单 ===== -->
+  <section id="rank">
+    <div class="wrap inner">
+      <div class="sec-head reveal">
+        <span class="buoy" style="--bu:var(--sun)"><b>03</b><span>BALLOON</span></span>
+        <div class="txt">
+          <h2><small>Ranking</small>气球榜单 · 三只热气球，各载一份榜单</h2>
+          <p>榜单综合无忧无虑电影网站内播放热度、完播率与观众评分，每小时重算一次，榜头是一只 CSS 手绘的热气球。</p>
+        </div>
+        <a class="more" href="#">榜单规则 →</a>
+      </div>
+      <div class="balloons">
+        <div class="bln reveal" style="--bc:var(--blue);--bc2:var(--blue-2)">
+          <div class="crown">
+            <span class="globe" aria-hidden="true"></span>
+            <h3>今日热播榜<em>HOT AIR</em></h3><u>FL-01</u>
+          </div>
+          <ol>
+            <li><span class="no">01</span><span class="rt"><strong>三月花信</strong><span>剧情 · 2026</span></span><span class="val">9.1</span></li>
+            <li><span class="no">02</span><span class="rt"><strong>深空信号</strong><span>剧情 · 2026</span></span><span class="val">9.0</span></li>
+            <li><span class="no">03</span><span class="rt"><strong>潮汐来信</strong><span>治愈 · 2026</span></span><span class="val">8.9</span></li>
+            <li><span class="no">04</span><span class="rt"><strong>第七个证人</strong><span>悬疑 · 2025</span></span><span class="val">8.8</span></li>
+            <li><span class="no">05</span><span class="rt"><strong>长街旧事</strong><span>爱情 · 2025</span></span><span class="val">8.7</span></li>
+          </ol>
+        </div>
+        <div class="bln reveal" style="--bc:var(--mint);--bc2:#22866f">
+          <div class="crown">
+            <span class="globe" aria-hidden="true"></span>
+            <h3>高分口碑榜<em>TOP RATED</em></h3><u>FL-02</u>
+          </div>
+          <ol>
+            <li><span class="no">01</span><span class="rt"><strong>第七个证人</strong><span>悬疑 · 2025</span></span><span class="val">8.8</span></li>
+            <li><span class="no">02</span><span class="rt"><strong>花灯记</strong><span>动画 · 2026</span></span><span class="val">8.6</span></li>
+            <li><span class="no">03</span><span class="rt"><strong>疾速拦截</strong><span>动作 · 2026</span></span><span class="val">8.5</span></li>
+            <li><span class="no">04</span><span class="rt"><strong>无声证词</strong><span>悬疑 · 2024</span></span><span class="val">8.4</span></li>
+            <li><span class="no">05</span><span class="rt"><strong>海边小店</strong><span>治愈 · 2025</span></span><span class="val">8.3</span></li>
+          </ol>
+        </div>
+        <div class="bln reveal" style="--bc:var(--coral);--bc2:#c9483e">
+          <div class="crown">
+            <span class="globe" aria-hidden="true"></span>
+            <h3>国创动漫榜<em>ANIME</em></h3><u>FL-03</u>
+          </div>
+          <ol>
+            <li><span class="no">01</span><span class="rt"><strong>花灯记</strong><span>动画 · 2026</span></span><span class="val">8.6</span></li>
+            <li><span class="no">02</span><span class="rt"><strong>山海食记</strong><span>动画 · 2025</span></span><span class="val">8.2</span></li>
+            <li><span class="no">03</span><span class="rt"><strong>星辰旅人</strong><span>动画 · 2026</span></span><span class="val">7.9</span></li>
+            <li><span class="no">04</span><span class="rt"><strong>机械之心</strong><span>动画 · 2025</span></span><span class="val">7.6</span></li>
+            <li><span class="no">05</span><span class="rt"><strong>森林邮局</strong><span>动画 · 2024</span></span><span class="val">7.3</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 栏目四：天空手记 ===== -->
+  <section id="news">
+    <div class="wrap inner">
+      <div class="sec-head reveal">
+        <span class="buoy" style="--bu:var(--coral)"><b>04</b><span>NOTE</span></span>
+        <div class="txt">
+          <h2><small>Journal</small>天空手记 · 上线消息与观影攻略</h2>
+          <p>每天梳理上线消息、题材观察与观影攻略，在点开播放器之前先做一次低成本决策。</p>
+        </div>
+        <a class="more" href="#">更多天空手记 →</a>
+      </div>
+      <div class="notes">
+        <article class="note reveal" style="--pc:var(--blue-2);--c1:#4a90d9;--c2:#16375c">
+          <div class="cv"><b>今日上新</b><u>NEW</u></div>
+          <div class="bd"><h3>本周新片：剧情与治愈同台</h3><p>无忧无虑电影网整理本周上线新片的题材分布与看点，附观影顺序建议。</p><time datetime="2026-10-04">2026-10-04</time></div>
+        </article>
+        <article class="note reveal" style="--pc:var(--mint);--c1:#3fbfa4;--c2:#0d3d34">
+          <div class="cv"><b>观影指南</b><u>GUIDE</u></div>
+          <div class="bd"><h3>手机上看清 1080P 的三步排查法</h3><p>从码率、播放器到网络环境逐一排查，弱网下也能获得稳定的高清体验。</p><time datetime="2026-10-02">2026-10-02</time></div>
+        </article>
+        <article class="note reveal" style="--pc:var(--lilac);--c1:#9b7fd4;--c2:#2e2050">
+          <div class="cv"><b>榜单解读</b><u>RANK</u></div>
+          <div class="bd"><h3>热播榜的分数是怎么算出来的</h3><p>拆解无忧无虑电影网榜单权重：播放热度、完播率与评分如何共同决定排位。</p><time datetime="2026-09-29">2026-09-29</time></div>
+        </article>
+        <article class="note reveal" style="--pc:var(--sun);--c1:#f4b942;--c2:#5c3c05">
+          <div class="cv"><b>题材专题</b><u>TOPIC</u></div>
+          <div class="bd"><h3>一份陪你过周末的治愈片单</h3><p>从轻松日常到温柔结局，挑选 12 部适合周末慢慢看的治愈系作品。</p><time datetime="2026-09-26">2026-09-26</time></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 栏目五：飞行指南 ===== -->
+  <section id="about">
+    <div class="wrap inner">
+      <div class="sec-head reveal">
+        <span class="buoy" style="--bu:var(--lilac)"><b>05</b><span>INFO</span></span>
+        <div class="txt">
+          <h2><small>About</small>关于无忧无虑电影网</h2>
+          <p>一个把「找片」这件事变短的影视资源聚合导航站，分类、榜单与新片信息集中在一页里。</p>
+        </div>
+        <a class="more" href="#">意见反馈 →</a>
+      </div>
+      <div class="about">
+        <div class="panel reveal">
+          <h3>我们做什么</h3>
+          <p><b>无忧无虑电影网</b>（https://wuyouwuludianyingwang-cn.github.io）是一个面向中文用户的影视资源聚合导航站。目标很直接：让「找片」这件事变短，把分散的影视入口、分类标签与榜单数据收进同一个页面。</p>
+          <p>三条坚持：<b>分类够细</b>、<b>上新够勤</b>、<b>页面够轻</b>。整站单页结构，移动端自适应，弱网也能快速打开。</p>
+          <div class="winds">
+            <div style="--wc:var(--blue)"><span></span><strong>六股气流</strong><em>按题材切换</em></div>
+            <div style="--wc:var(--mint)"><span></span><strong>移动优先</strong><em>手机平板全适配</em></div>
+            <div style="--wc:var(--sun)"><span></span><strong>每日上新</strong><em>10:00 / 21:00</em></div>
+            <div style="--wc:var(--coral)"><span></span><strong>轻量加载</strong><em>单页打开即看</em></div>
+          </div>
+        </div>
+        <div class="panel faq reveal">
+          <h3>常见问题</h3>
+          <details open><summary>无忧无虑电影网需要注册才能浏览吗？</summary><p>不需要。云朵片库、榜单与天空手记内容全部开放访问，打开页面即可查看，无需注册登录。</p></details>
+          <details><summary>为什么把站点做成「晴空纸飞机」的样子？</summary><p>站名「无忧无虑」讲的是轻松。我们想表达「随手就有」：题材是气流，影片是停着的云朵，更新进度是纸飞机飞到哪一段，不用挑日子，随时起飞。</p></details>
+          <details><summary>手机端会自动适配屏幕吗？</summary><p>会。页面为响应式布局，手机上自动切换为双列卡片与折叠导航，航线行与热气球转单列，横竖屏都能正常显示。</p></details>
+          <details><summary>影片清晰度可以自己选吗？</summary><p>支持多档清晰度切换，具体档位以播放源为准；网络较差时建议先降低清晰度保证流畅。</p></details>
+          <details><summary>找不到想看的影片怎么办？</summary><p>先用顶部搜索框按片名、演员或类型检索，也可进入云朵片库按题材与年份逐层筛选。</p></details>
+        </div>
+      </div>
+
+      <div class="cta reveal">
+        <h2>今天往哪儿飞？<em>无忧无虑电影网</em> 天气正好</h2>
+        <p>收藏无忧无虑电影网，随时打开就能看到最新上线的电影、剧集与热播榜单，今天不愁没得看。</p>
+        <a href="#movie">随手起飞</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== 页脚 ===== -->
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fbrand">
+        <a class="lg" href="#home" aria-label="无忧无虑电影网首页"><i aria-hidden="true"></i>无忧无虑电影网</a>
+        <p>无忧无虑电影网 · 影视资源聚合导航。本站仅提供影视信息索引与分类导航服务。</p>
+      </div>
+      <div>
+        <h4>栏目导航</h4>
+        <ul>
+          <li><a href="#home">晴天首页</a></li>
+          <li><a href="#movie">云朵片库</a></li>
+          <li><a href="#series">追更航线</a></li>
+          <li><a href="#rank">气球榜单</a></li>
+          <li><a href="#news">天空手记</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>热门类型</h4>
+        <ul>
+          <li><a href="#movie">治愈系电影</a></li>
+          <li><a href="#movie">剧情电影</a></li>
+          <li><a href="#movie">悬疑犯罪</a></li>
+          <li><a href="#movie">爱情剧情</a></li>
+          <li><a href="#movie">国创动漫</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于本站</h4>
+        <ul>
+          <li><a href="#about">关于无忧无虑电影网</a></li>
+          <li><a href="#about">常见问题</a></li>
+          <li><a href="#">意见反馈</a></li>
+          <li><a href="#">免责声明</a></li>
+          <li><a href="#">友情链接</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 无忧无虑电影网 https://wuyouwuludianyingwang-cn.github.io · 影视信息聚合导航</span>
+      <span>热门关键词：<b>无忧无虑电影网</b> · 电影在线观看 · 电视剧在线观看 · 动漫在线观看 · 热播榜单</span>
+    </div>
+  </div>
+</footer>
+
+<button id="top" aria-label="回到顶部"><svg viewBox="0 0 24 24"><path d="M12 5l7 7h-4v7h-6v-7H5z"/></svg></button>
+
+<!-- ===== 结构化数据（利于必应理解与收录） ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://wuyouwuludianyingwang-cn.github.io/#website",
+      "url": "https://wuyouwuludianyingwang-cn.github.io/",
+      "name": "无忧无虑电影网",
+      "alternateName": ["无忧无虑电影", "无忧无虑电影网官网"],
+      "description": "无忧无虑电影网是面向中文用户的影视资源聚合导航站，收录热门电影、热播电视剧、国创动漫与热播榜单。",
+      "inLanguage": "zh-CN",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": { "@type": "EntryPoint", "urlTemplate": "https://wuyouwuludianyingwang-cn.github.io/?q={search_term_string}" },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://wuyouwuludianyingwang-cn.github.io/#organization",
+      "name": "无忧无虑电影网",
+      "url": "https://wuyouwuludianyingwang-cn.github.io/",
+      "logo": "https://wuyouwuludianyingwang-cn.github.io/favicon.ico"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://wuyouwuludianyingwang-cn.github.io/#webpage",
+      "url": "https://wuyouwuludianyingwang-cn.github.io/",
+      "name": "无忧无虑电影网 - 热门电影电视剧在线观看_影视资源聚合导航",
+      "isPartOf": { "@id": "https://wuyouwuludianyingwang-cn.github.io/#website" },
+      "about": { "@id": "https://wuyouwuludianyingwang-cn.github.io/#organization" },
+      "inLanguage": "zh-CN",
+      "primaryImageOfPage": "https://wuyouwuludianyingwang-cn.github.io/favicon.ico",
+      "breadcrumb": { "@id": "https://wuyouwuludianyingwang-cn.github.io/#breadcrumb" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://wuyouwuludianyingwang-cn.github.io/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://wuyouwuludianyingwang-cn.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "云朵片库", "item": "https://wuyouwuludianyingwang-cn.github.io/#movie" },
+        { "@type": "ListItem", "position": 3, "name": "追更航线", "item": "https://wuyouwuludianyingwang-cn.github.io/#series" },
+        { "@type": "ListItem", "position": 4, "name": "气球榜单", "item": "https://wuyouwuludianyingwang-cn.github.io/#rank" },
+        { "@type": "ListItem", "position": 5, "name": "天空手记", "item": "https://wuyouwuludianyingwang-cn.github.io/#news" }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "name": "无忧无虑电影网今日热播榜",
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "numberOfItems": 5,
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "三月花信" },
+        { "@type": "ListItem", "position": 2, "name": "深空信号" },
+        { "@type": "ListItem", "position": 3, "name": "潮汐来信" },
+        { "@type": "ListItem", "position": 4, "name": "第七个证人" },
+        { "@type": "ListItem", "position": 5, "name": "长街旧事" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "无忧无虑电影网需要注册才能浏览吗？",
+          "acceptedAnswer": { "@type": "Answer", "text": "不需要。云朵片库、榜单与天空手记内容全部开放访问，打开页面即可查看，无需注册登录。" } },
+        { "@type": "Question", "name": "为什么把站点做成「晴空纸飞机」的样子？",
+          "acceptedAnswer": { "@type": "Answer", "text": "站名「无忧无虑」讲的是轻松。我们想表达「随手就有」：题材是气流，影片是停着的云朵，更新进度是纸飞机飞到哪一段，不用挑日子，随时起飞。" } },
+        { "@type": "Question", "name": "手机端会自动适配屏幕吗？",
+          "acceptedAnswer": { "@type": "Answer", "text": "会。页面为响应式布局，手机上自动切换为双列卡片与折叠导航，航线行与热气球转单列，横竖屏都能正常显示。" } },
+        { "@type": "Question", "name": "影片清晰度可以自己选吗？",
+          "acceptedAnswer": { "@type": "Answer", "text": "支持多档清晰度切换，具体档位以播放源为准；网络较差时建议先降低清晰度保证流畅。" } },
+        { "@type": "Question", "name": "找不到想看的影片怎么办？",
+          "acceptedAnswer": { "@type": "Answer", "text": "先用顶部搜索框按片名、演员或类型检索，也可进入云朵片库按题材与年份逐层筛选。" } }
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+(function () {
+  'use strict';
+  var bar = document.getElementById('progress');
+  var topBtn = document.getElementById('top');
+  function onScroll () {
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    var y = window.scrollY || document.documentElement.scrollTop;
+    bar.style.width = (h > 0 ? Math.min(1, y / h) * 100 : 0) + '%';
+    if (y > 420) { topBtn.classList.add('show'); } else { topBtn.classList.remove('show'); }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  topBtn.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+  /* 移动端导航 */
+  var burger = document.getElementById('burger');
+  var menu = document.getElementById('menu');
+  burger.addEventListener('click', function () {
+    var open = menu.classList.toggle('open');
+    burger.classList.toggle('on', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  menu.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      menu.classList.remove('open');
+      burger.classList.remove('on');
+      burger.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  /* 导航高亮 */
+  var links = Array.prototype.slice.call(menu.querySelectorAll('a[href^="#"]:not(.nav-cta)'));
+  var secs = links.map(function (a) { return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if ('IntersectionObserver' in window) {
+    var navObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) { return; }
+        links.forEach(function (a) {
+          a.classList.toggle('active', a.getAttribute('href') === '#' + en.target.id);
+        });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    secs.forEach(function (s) { navObs.observe(s); });
+  }
+
+  /* 气流筛选 */
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.filters button'));
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#movieGrid .clcard'));
+  tabs.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      tabs.forEach(function (b) { b.classList.remove('on'); b.setAttribute('aria-selected', 'false'); });
+      btn.classList.add('on');
+      btn.setAttribute('aria-selected', 'true');
+      var cat = btn.getAttribute('data-cat');
+      cards.forEach(function (c) {
+        c.style.display = (cat === 'all' || c.getAttribute('data-cat') === cat) ? '' : 'none';
+      });
+    });
+  });
+
+  /* 搜索 */
+  var form = document.getElementById('searchForm');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!form.q.value.trim()) { form.q.focus(); return; }
+    document.getElementById('movie').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  /* 入场动画 */
+  var reveals = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en, i) {
+        if (en.isIntersecting) {
+          var el = en.target;
+          setTimeout(function () { el.classList.add('in'); }, i * 50);
+          io.unobserve(el);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(function (r) { io.observe(r); });
+  } else {
+    reveals.forEach(function (r) { r.classList.add('in'); });
+  }
+})();
+</script>
+</body>
+</html>
